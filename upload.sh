@@ -1,0 +1,1 @@
+sshpass -f './password' scp -rp ./homepage cs332g20@shell.ecs.fullerton.edu:/home/titan0/cs332g/cs332g20

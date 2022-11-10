@@ -6,7 +6,7 @@ This repo stores the term project for Database Class CPSC 332 for CSUF
     - `apt-get install sshpass` for Debian-based OSes
 2) Ensure that `upload.sh` has permissions to run
     - `chmod 755 upload.sh`
-3) Ensure that the `password` file is configured (see below)
+3) Ensure that the `password` file is configured (see Step 7 below)
 4) Run `upload.sh` to transfer everything in `homepage` folder into the virtual machine.
 5) Use Visual Studio Code with Live Server Plugin and MySQL on local PC to locally test changes
 

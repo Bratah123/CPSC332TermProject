@@ -9,6 +9,7 @@ This repo stores the term project for Database Class CPSC 332 for CSUF
 3) Ensure that the `password` file is configured (see Step 7 below)
 4) Run `upload.sh` to transfer everything in `homepage` folder into the virtual machine.
 5) Use Visual Studio Code with Live Server Plugin and MySQL on local PC to locally test changes
+6) In Bash run `php -S 127.0.0.1:5500` to be able to execute PHP files locally while using Live Server.
 
 ## Instructions to set up automation (already done for this repo)
 1) create a file in called `password` (no file extensions)

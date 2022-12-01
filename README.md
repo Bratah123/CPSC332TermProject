@@ -22,3 +22,7 @@ This repo stores the term project for Database Class CPSC 332 for CSUF
     - Type the password
     - `CTRL + O` and `CTRL + X` to save and exit
 8) Alter `upload.sh` with the correct account number and `pwd` of the destination directory
+
+## Extra
+
+Link to the website: http://ecs.fullerton.edu/~cs332g20/

@@ -8,39 +8,34 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- Inputs needed for Professors -->
-    <h2 text="#ffffff"> 
-      Professor Portal
-    </h2>
-      <form action="php_files/ssn_prof_request.php">
-        <label for="fname">Social Security:</label><br>
-        <input type="text" id="ssn" name="ssn" value="XXX-XXX-XXXX"><br>
-        <input type="submit" value="Query">
-      </form>
-      <br>
-      <form action="php_files/cn_sn_prof_request.php">
-        <label for="fname">Course Number:</label><br>
-        <input type="text" id="cnum" name="cnum" value="XXX-XXX-XXXX"><br>
-        <label for="fname">Section Number:</label><br>
-        <input type="text" id="snum" name="snum" value="XXX-XXX-XXXX"><br>
-        <input type="submit" value="Query">
-      </form>
-    
-    <!-- Inputs needed for Students -->
-    <h2 id="student-portal" text="#ffffff"> 
-      Student Portal
-    </h2>
-    <form action="php_files/cnum_student_request.php">
-      <label for="fname">Course Number:</label><br>
-      <input type="text" id="cnum" name="cnum" value="XXXX"><br>
-      <input type="submit" value="Query">
-    </form>
-    <br>
-    <form action="php_files/cwid_student_request.php">
-      <label for="fname">CWID:</label><br>
-      <input type="text" id="cwid" name="cwid" value="XXXXXXXXXX"><br>
-      <input type="submit" value="Query">
-    </form>
+          <!-- Inputs needed for Professors -->
+          <h2 text="#ffffff"> 
+            Professor Portal
+          </h2>
+            <form action="php_files/ssn_prof_request.php">
+              <input type="text" id="ssn" name="ssn" placeholder="Social Security"><br>
+              <input type="submit" value="Query">
+            </form>
+            <br>
+            <form action="php_files/cn_sn_prof_request.php">
+              <input type="text" id="cnum" name="cnum" placeholder="Course Number"><br>
+              <input type="text" id="snum" name="snum" placeholder="Section Number"><br>
+              <input type="submit" value="Query">
+            </form>
 
+          <!-- Inputs needed for Students -->
+          <h2 id="student-portal" text="#ffffff"> 
+            Student Portal
+          </h2>
+          <form action="php_files/cnum_student_request.php">
+            <input type="text" id="cnum" name="cnum" placeholder="Course Number"><br>
+            <input type="submit" value="Query">
+          </form>
+          <br>
+          <form action="php_files/cwid_student_request.php">
+            <input type="text" id="cwid" name="cwid" placeholder="CWID"><br>
+            <input type="submit" value="Query">
+          </form>
+  
   </body>
 </html>

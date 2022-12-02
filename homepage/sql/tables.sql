@@ -20,7 +20,7 @@ CREATE TABLE departments(
     phone_num INT,
     location VARCHAR(255),
     chair_person INT,
-    FOREIGN KEY(VARCHAR_person) REFERENCES professors(ssn),
+    FOREIGN KEY(chair_person) REFERENCES professors(ssn),
     PRIMARY KEY(department_num)
 );
 
@@ -45,8 +45,8 @@ CREATE TABLE sections(
     course INT,
     p_ssn INT,
 	
-	Foreign Key (p_ssn) REFERENCES professors(p_ssn),
-	Foreign Key (course) REFERENCES courses(course)
+	Foreign Key (p_ssn) REFERENCES professors(ssn),
+	Foreign Key (course) REFERENCES courses(course_num)
 );
 
 CREATE TABLE students(
@@ -59,4 +59,13 @@ CREATE TABLE students(
     minors VARCHAR(255),
     
     PRIMARY KEY(cwid)
+);
+
+CREATE TABLE enrollments(
+	student_id INT NOT NULL,
+    course_section INT NOT NULL,
+    grade CHAR(1),
+    
+    FOREIGN KEY(student_id) REFERENCES students(cwid),
+    FOREIGN KEY(course_section) REFERENCES courses(section_num)
 );

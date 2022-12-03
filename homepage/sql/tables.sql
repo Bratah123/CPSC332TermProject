@@ -1,4 +1,4 @@
-# The default database is named: c332g20
+# The default database is named: cs332g20
 
 CREATE TABLE professors(
 	ssn INT NOT NULL,

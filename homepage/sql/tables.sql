@@ -1,3 +1,5 @@
+# The default database is named: c332g20
+
 CREATE TABLE professors(
 	ssn INT NOT NULL,
     pname VARCHAR(255),

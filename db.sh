@@ -22,7 +22,7 @@ echo "Now running SQL scripts"
 for val in ${scripts[@]}; do
     timestamp >> log.txt
     echo "    Running $val" >> log.txt
-    sshpass -f './password' ssh cs332g20@shell.ecs.fullerton.edu "mysql $schema < $val" >> log.txt
+    sshpass -f './password' ssh cs332g20@shell.ecs.fullerton.edu "mysql -h mariadb $schema < $val" >> log.txt
 done
 
 timestamp >> log.txt

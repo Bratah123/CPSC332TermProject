@@ -17,12 +17,12 @@ INSERT INTO courses(course_num, title, textbook, units, department_offered) VALU
 (4, 'Advanced Mathematics', 'Advanced Mathematics', 4, 2);
 
 INSERT INTO sections(section_num, classroom, seats_num, meeting_days, begin_time, end_time, course, p_ssn) VALUES
-(1, '1234 Main St', 35, 'MWF', '9:00', '10:00', 1, 123456789),
-(2, '2345 Main St', 42, 'MWF', '10:00', '11:00', 1, 123456789),
-(3, '3456 Main St', 36, 'MWF', '11:00', '12:00', 1, 123456789),
-(4, '4567 Main St', 22, 'MWF', '12:00', '1:00', 2, 234567890),
-(5, '5678 Main St', 34, 'MWF', '1:00', '2:00', 2, 234567890),
-(6, '6789 Main St', 37, 'MWF', '2:00', '3:00', 2, 234567890);
+(1, '167B', 35, 'MWF', '9:00am', '10:00am', 1, 123456789),
+(2, '367A', 42, 'MW', '10:00am', '11:00am', 1, 123456789),
+(3, '376C', 36, 'TTh', '11:00am', '12:00pm', 2, 234567890),
+(4, '326A', 22, 'Fri', '12:00pm', '1:00pm', 2, 234567890),
+(5, '124D', 34, 'Sat', '1:00pm', '2:00pm', 3, 345678901),
+(6, '531F', 37, 'MWF', '2:00pm', '3:00pm', 4, 345678901);
 
 INSERT INTO students(cwid, s_fname, s_lname, address, phone_num, major, minors) VALUES
 (1, 'John', 'Smith', '1234 Main St', '1234567890','Mathematics', 'Computer Science'),
@@ -35,27 +35,27 @@ INSERT INTO students(cwid, s_fname, s_lname, address, phone_num, major, minors) 
 (8, 'Jane', 'Doe', '8901 Main St', '8901234567', 'Computer Science', 'Electrical Engineering');
 
 INSERT INTO enrollments(student_id, course_section, grade) VALUES
-(1, 1, 'A'),
-(1, 2, 'B'),
-(1, 3, 'C'),
+(1, 3, 'A'),
+(1, 6, 'B'),
+(1, 5, 'C'),
 (2, 1, 'D'),
-(2, 2, 'F'),
-(2, 3, 'A'),
-(3, 1, 'B'),
-(3, 2, 'C'),
-(3, 3, 'D'),
-(4, 1, 'F'),
-(4, 2, 'A'),
-(4, 3, 'B'),
-(5, 1, 'C'),
-(5, 2, 'D'),
-(5, 3, 'F'),
-(6, 1, 'A'),
-(6, 2, 'B'),
-(6, 3, 'C'),
-(7, 1, 'D'),
-(7, 2, 'F'),
-(7, 3, 'A'),
-(8, 1, 'B'),
-(8, 2, 'C'),
-(8, 3, 'F');
+(2, 3, 'F'),
+(2, 5, 'A'),
+(3, 2, 'B'),
+(3, 5, 'C'),
+(3, 6, 'D'),
+(4, 4, 'F'),
+(4, 3, 'A'),
+(4, 1, 'B'),
+(5, 5, 'C'),
+(5, 3, 'D'),
+(5, 6, 'F'),
+(6, 2, 'A'),
+(6, 3, 'B'),
+(6, 5, 'C'),
+(7, 6, 'D'),
+(7, 3, 'F'),
+(7, 2, 'A'),
+(8, 4, 'B'),
+(8, 5, 'C'),
+(8, 6, 'F');

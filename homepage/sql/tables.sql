@@ -36,7 +36,6 @@ CREATE TABLE courses(
     PRIMARY KEY(course_num)
 );
 
-# WEAK Entity of courses hence no primary key
 CREATE TABLE sections(
     section_num INT NOT NULL,
     classroom VARCHAR(255),
@@ -47,6 +46,7 @@ CREATE TABLE sections(
     course INT,
     p_ssn INT,
 	
+    PRIMARY KEY(section_num),
 	FOREIGN KEY (p_ssn) REFERENCES professors(ssn),
 	FOREIGN KEY (course) REFERENCES courses(course_num)
 );
@@ -69,5 +69,5 @@ CREATE TABLE enrollments(
     grade CHAR(1),
     
     FOREIGN KEY(student_id) REFERENCES students(cwid),
-    FOREIGN KEY(course_section) REFERENCES courses(course_num)
+    FOREIGN KEY(course_section) REFERENCES sections(section_num)
 );

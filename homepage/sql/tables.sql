@@ -8,7 +8,7 @@ CREATE TABLE professors(
     state VARCHAR(255),
     zip_code INT,
     area_code INT,
-    phone_num INT,
+    phone_num VARCHAR(255),
     sex VARCHAR(255),
     title VARCHAR(255),
     salary INT,
@@ -56,8 +56,8 @@ CREATE TABLE students(
     s_fname VARCHAR(255),
     s_lname VARCHAR(255),
     address VARCHAR(255),
-    phone_num INT,
-    major INT,
+    phone_num VARCHAR(255),
+    major VARCHAR(255),
     minors VARCHAR(255),
     
     PRIMARY KEY(cwid)

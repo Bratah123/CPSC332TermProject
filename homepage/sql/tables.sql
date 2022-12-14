@@ -47,8 +47,8 @@ CREATE TABLE sections(
     course INT,
     p_ssn INT,
 	
-	Foreign Key (p_ssn) REFERENCES professors(ssn),
-	Foreign Key (course) REFERENCES courses(course_num)
+	FOREIGN KEY (p_ssn) REFERENCES professors(ssn),
+	FOREIGN KEY (course) REFERENCES courses(course_num)
 );
 
 CREATE TABLE students(

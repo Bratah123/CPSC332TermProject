@@ -19,7 +19,7 @@ CREATE TABLE professors(
 CREATE TABLE departments(
 	department_num INT NOT NULL,
     dname VARCHAR(255),
-    phone_num INT,
+    phone_num VARCHAR(255),
     location VARCHAR(255),
     chair_person INT,
     FOREIGN KEY(chair_person) REFERENCES professors(ssn),

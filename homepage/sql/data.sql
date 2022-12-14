@@ -2,9 +2,9 @@
 -- Path: homepage\sql\data.sql
 
 INSERT INTO professors(ssn, pname, street_address, city, state, zip_code, area_code, phone_num, sex, title, salary, college_degrees) VALUES
-(123456789, 'John Smith', '1234 Main St', 'Fullerton', 'California', 12345, 123, 4567890, 'M', 'Professor', 100000, 'PhD'),
-(234567890, 'Jane Doe', '2345 Main St', 'Westminster', 'California', 23456, 234, 5678901, 'F', 'Professor', 120000, 'PhD'),
-(345678901, 'John Doe', '3456 Main St', 'Santa Ana', 'California', 34567, 345, 6789012, 'M', 'Professor', 210000, 'PhD');
+(123456789, 'John Smith', '1234 Main St', 'Fullerton', 'California', 12345, 123, '4567890', 'M', 'Professor', 100000, 'PhD'),
+(234567890, 'Jane Doe', '2345 Main St', 'Westminster', 'California', 23456, 234, '5678901', 'F', 'Professor', 120000, 'PhD'),
+(345678901, 'John Doe', '3456 Main St', 'Santa Ana', 'California', 34567, 345, '6789012', 'M', 'Professor', 210000, 'PhD');
 
 INSERT INTO departments(department_num, dname, phone_num, location, chair_person) VALUES
 (1, 'Computer Science', '1234567890', '1234 Main St', 123456789),

@@ -69,5 +69,5 @@ CREATE TABLE enrollments(
     grade CHAR(1),
     
     FOREIGN KEY(student_id) REFERENCES students(cwid),
-    FOREIGN KEY(course_section) REFERENCES courses(section_num)
+    FOREIGN KEY(course_section) REFERENCES courses(course_num)
 );

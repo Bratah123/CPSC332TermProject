@@ -26,12 +26,12 @@ INSERT INTO sections(section_num, classroom, seats_num, meeting_days, begin_time
 
 INSERT INTO students(cwid, s_fname, s_lname, address, phone_num, major, minors) VALUES
 (1, 'John', 'Smith', '1234 Main St', '1234567890','Mathematics', 'Computer Science'),
-(2, 'Jane', 'Doe', '2345 Main St', '2345678901', 'Computer Science'),
-(3, 'John', 'Doe', '3456 Main St', '3456789012', 'Mathematics'),
+(2, 'Jane', 'Doe', '2345 Main St', '2345678901', 'Computer Science', ''),
+(3, 'John', 'Doe', '3456 Main St', '3456789012', 'Mathematics', ''),
 (4, 'Jane', 'Smith', '4567 Main St', '4567890123', 'Computer Science', 'Physics'),
-(5, 'John', 'Doe', '5678 Main St', '5678901234', 'Mathematics'),
+(5, 'John', 'Doe', '5678 Main St', '5678901234', 'Mathematics', ''),
 (6, 'Jane', 'Doe', '6789 Main St', '6789012345', 'Computer Science', 'Electrical Engineering, Biology'),
-(7, 'John', 'Smith', '7890 Main St', '7890123456', 'Mathematics'),
+(7, 'John', 'Smith', '7890 Main St', '7890123456', 'Mathematics', ''),
 (8, 'Jane', 'Doe', '8901 Main St', '8901234567', 'Computer Science', 'Electrical Engineering');
 
 INSERT INTO enrollments(student_id, course_section, grade) VALUES

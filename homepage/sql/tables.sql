@@ -66,7 +66,7 @@ CREATE TABLE students(
 CREATE TABLE enrollments(
 	student_id INT NOT NULL,
     course_section INT NOT NULL,
-    grade CHAR(1),
+    grade VARCHAR(255),
     
     FOREIGN KEY(student_id) REFERENCES students(cwid),
     FOREIGN KEY(course_section) REFERENCES sections(section_num)

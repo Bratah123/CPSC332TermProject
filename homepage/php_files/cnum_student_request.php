@@ -39,8 +39,7 @@
                 $row2 = mysqli_fetch_assoc($result2);
                 echo "Classroom: " . $row["classroom"] . "<br>";
                 echo "Meeting Days: " . $row["meeting_days"] . "<br>";
-                echo "Beginning Time: " . $row["begin_time"] . "<br>";
-                echo "End Time: " . $row["end_time"] . "<br>";
+                echo "Meeting Time: " . $row["begin_time"] . " - " . $row["end_time"] . "<br>";
                 echo "Enrolled Students: " . $row2["enrolled_students"] . "<br>";
                 echo "<br>";
                 mysqli_free_result($result2);

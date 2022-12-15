@@ -39,7 +39,7 @@ INSERT INTO enrollments(student_id, course_section, grade) VALUES
 (1, 6, 'B-'),
 (1, 5, 'C'),
 (2, 1, 'D-'),
-(2, 3, 'F+'),
+(2, 3, 'F'),
 (2, 5, 'A'),
 (3, 2, 'B'),
 (3, 5, 'C+'),

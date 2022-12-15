@@ -1,6 +1,6 @@
 <html>
     <body>
-        Your requested information:
+        Your requested information for Course Number: <?php echo $_GET["cnum"]; ?>
         <br>
         <br>
         <?php
@@ -43,9 +43,9 @@
                 echo "End Time: " . $row["end_time"] . "<br>";
                 echo "Enrolled Students: " . $row2["enrolled_students"] . "<br>";
                 echo "<br>";
+                mysqli_free_result($result2);
             }
             mysqli_free_result($result);
-            mysqli_free_result($result2);
             $link->close();
         ?>
     </body>
